@@ -1,28 +1,5 @@
-import { mount }        from '../utils/dom.js';
-import { skillGroups }  from '../data/skills.js';
-
-function renderBar({ name, level }) {
-  return `
-    <div class="skill-row">
-      <div class="skill-row-header">
-        <span>${name}</span>
-        <span>${level}%</span>
-      </div>
-      <div class="skill-bar-track">
-        <div class="skill-bar-fill" style="--w: ${level}%"></div>
-      </div>
-    </div>
-  `;
-}
-
-function renderGroup({ group, skills }) {
-  return `
-    <div class="skills-group fade-up">
-      <h3>${group}</h3>
-      ${skills.map(renderBar).join('')}
-    </div>
-  `;
-}
+import { mount } from '../utils/dom.js';
+import { skillBadges } from '../data/skills.js';
 
 function template() {
   return `
@@ -33,8 +10,10 @@ function template() {
       </div>
 
       <div class="skills-wrapper">
-        <div class="skills-columns">
-          ${skillGroups.map(renderGroup).join('')}
+        <div class="skills-badges fade-up">
+          ${skillBadges
+            .map(skill => `<span class="skill-badge">${skill}</span>`)
+            .join('')}
         </div>
       </div>
     </section>
