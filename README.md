@@ -2,7 +2,7 @@
 # Pengembangan Web Portofolio
 
 ## Struktur Proyek
-
+```
 index.html
 
 css/
@@ -44,7 +44,7 @@ js/
 assets/
 | foto-profil.jpg
 | CV_AkmalBaihaqii.pdf 
-
+```
 
 ## Update Data
 
