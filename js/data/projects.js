@@ -25,7 +25,7 @@ export const projects = [
     category: 'ai/ml',
     tags:     ['Python'],
     title:    'Identifikasi penjakit jamur berbasis image detection menggunakan CNN',
-    desc:     'Dashboard visualisasi data penjualan real-time menggunakan Python Flask sebagai backend dan Chart.js untuk grafik interaktif.',
+    desc:     'Membuat sistem deteksi dini untuk penyakit jamur berbasis IOT dan CNN Image Proccessing',
     demo:     '',
     repo:     '',
   },
