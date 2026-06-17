@@ -79,7 +79,7 @@ Buka `js/data/projects.js` = tambahkan objek baru ke array `projects`:
 
 ---
 
-## 🏗 Arsitektur
+## Arsitektur
 
 ```
 index.html (shell)
