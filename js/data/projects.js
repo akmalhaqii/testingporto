@@ -12,7 +12,7 @@ export const projects = [
   {
     id:       'iot-project',
     emoji:    '',
-    category: 'IOT',
+    category: 'iot',
     tags:     ['IOT', 'ESP32'],
     title:    'IOT Soil PH Monitoring System',
     desc:     'Mendesain sistem arsitektur untuk keperluan integrasi hardware dan software, project menggunakan mikrokontroller ESP32',
@@ -22,7 +22,7 @@ export const projects = [
   {
     id:       'CNN-Image-Detection',
     emoji:    '',
-    category: 'AI/ML',
+    category: 'ai/ml',
     tags:     ['Python'],
     title:    'Identifikasi penjakit jamur berbasis image detection menggunakan CNN',
     desc:     'Dashboard visualisasi data penjualan real-time menggunakan Python Flask sebagai backend dan Chart.js untuk grafik interaktif.',
@@ -34,8 +34,6 @@ export const projects = [
 export const categories = [
   { value: 'all', label: 'Semua' },
   { value: 'web', label: 'Web' },
-  { value: 'mobile', label: 'Mobile' },
   { value: 'iot', label: 'IOT' },
   { value: 'ai/ml', label: 'AI/ML' },
-  { value: 'ui', label: 'UI/UX' },
 ];
