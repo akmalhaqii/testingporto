@@ -1,0 +1,46 @@
+@media (max-width: 900px) {
+  .about-grid     { grid-template-columns: 1fr; gap: 48px; }
+  .contact-grid   { grid-template-columns: 1fr; gap: 48px; }
+  .skills-columns { grid-template-columns: 1fr; gap: 32px; }
+
+  .about-photo-wrap {
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  #navbar         { padding: 16px 20px; }
+  #navbar.scrolled { padding: 12px 20px; }
+  .nav-links      { display: none; }
+  .hamburger      { display: flex; }
+
+  .nav-links.open {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    inset: 0;
+    background: var(--bg-primary);
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    z-index: 999;
+  }
+
+  .nav-links.open a { font-size: 1.4rem; }
+
+  #hero,
+  #about,
+  #portfolio,
+  #skills,
+  #contact      { padding-left: 20px; padding-right: 20px; }
+
+  .hero-cta     { flex-direction: column; }
+  .hero-cta .btn { width: 100%; justify-content: center; }
+
+  .stats-row    { gap: 20px; }
+
+  .projects-grid { grid-template-columns: 1fr; }
+
+  footer        { flex-direction: column; text-align: center; }
+}

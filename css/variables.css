@@ -1,0 +1,22 @@
+:root {
+  --bg-primary:    #0F0F0F;
+  --bg-secondary:  #1A1A2E;
+  --bg-light:      #F5F5F5;
+  --accent:        #6C63FF;
+  --accent-light:  #9D97FF;
+  --text-primary:  #FFFFFF;
+  --text-secondary:#A0A0B0;
+  --text-dark:     #1A1A2E;
+  --border:        rgba(108, 99, 255, 0.25);
+  --shadow:        0 8px 32px rgba(108, 99, 255, 0.15);
+
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body:    'Inter', sans-serif;
+
+  --radius-sm:   8px;
+  --radius-md:   16px;
+  --radius-lg:   24px;
+  --radius-full: 9999px;
+
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}

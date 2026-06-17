@@ -1,0 +1,38 @@
+.cursor-dot,
+.cursor-follower {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  border-radius: var(--radius-full);
+}
+
+.cursor-dot {
+  width: 8px;
+  height: 8px;
+  background: var(--accent);
+  transition: transform 0.1s ease, opacity 0.2s ease;
+}
+
+.cursor-follower {
+  width: 36px;
+  height: 36px;
+  border: 2px solid var(--accent);
+  opacity: 0.5;
+  transition: transform 0.15s ease, width 0.3s ease,
+              height 0.3s ease, opacity 0.3s ease;
+}
+
+body.cursor-hover .cursor-follower {
+  width: 52px;
+  height: 52px;
+  opacity: 0.8;
+  background: rgba(108, 99, 255, 0.1);
+}
+
+@media (hover: none) {
+  .cursor-dot,
+  .cursor-follower { display: none; }
+}
